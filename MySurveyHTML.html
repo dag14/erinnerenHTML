@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div>
+      <h1 id="title">My Survey Form</h1>
+    <p id="description">This is my survey form</p>
+    <form id="survey-form">
+      <fieldset id="bigfield">
+      <label id="name-label"> Name <br><input id="name" type="text" placeholder="Enter your name"/> </label>
+
+      <label id="email-label"> <br> Email <br>  <input id="email" type="email" required placeholder="Enter your Email"/> </label>
+      <label id="number-label"> <br>Age (optional)<br><input min="5" max="99" id="number" type="number" placeholder="Age" /> </label> 
+      <br>
+      <label id="dropdown-label"> Which option best describes your current role?
+        <br>
+        <select id="dropdown">
+        <option>Select current role</option>
+       <option>Student</option>
+       <option>Full time job</option>
+       <option>Full time learner</option>
+       <option>Student</option>
+       <option>Prefer not to say</option> 
+       <option>Other</option>
+      </select>
+      </label>
+      <br>
+        <label id="reccomend-label">
+          Would you recommend freeCodeCamp to a friend? <br>
+          <input type="radio" name="recrad" value="def" >Definitely<br>
+<input type="radio" name="recrad" value="may">Maybe<br>
+<input type="radio" name="recrad" value="ns">Not sure
+          
+      </label>
+      <br>
+      <label id= "id-label">What is your favorite feature of freeCodeCamp?
+        <br>
+        <select id="dropdown">
+        <option>Select an option</option>
+       <option>Challenges</option>
+       <option>Projetcs</option>
+       <option>Community</option>
+       <option>Open source</option> 
+      </select>
+      </label>
+      <label id="improve-label">
+        <br>
+        what would you like to see improved? (Select all that apply) <br>
+        <input id="improvment" type="checkbox" value="frontend"/> Front-end Projects <br>
+        <input id="improvment" type="checkbox" value="backend"/> Back-end Projects
+        <br>
+        <input id="improvment" type="checkbox" value="datavisualization"/> Data Visualization
+        <br>
+        <input id="improvment" type="checkbox" value="challenges"/> Challenges
+        <br>
+        <input id="improvment" type="checkbox" value="opensourcecommunity"/> Open Source Community
+        <br>
+        <input id="improvment" type="checkbox" value="gitterhelprooms"/> Gitter help rooms
+        <br>
+        <input id="improvment" type="checkbox" value="videos"/> Videos
+        <br>
+        <input id="improvment" type="checkbox" value="citymeetups"/> City Meetups
+        <br>
+        <input id="improvment" type="checkbox" value="wiki"/> Wiki
+        <br>
+        <input id="improvment" type="checkbox" value="forum"/> Forum
+        <br>
+        <input id="improvment" type="checkbox" value="additionalcourses"/> Additional Courses
+        <label for="textarea"> <br> Any comments or suggestions?
+        <br>
+        <textarea id="textarea" placeholder="Enter your comment here...">
+          </textarea>
+          <br>
+          <input id= "submit" type="submit"/>
+          </label>
+      </label>
+      <br>
+      
+
+      </fieldset>
+      
+    </form>
+    </div>
+</body>
+
+</html>
